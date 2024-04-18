@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0113c61-f5c6-461b-8c8a-52283790700d" name="Changes" comment="nova estrutura de codigo">
-      <change afterPath="$PROJECT_DIR$/src/ProdutoDAO.java" afterDir="false" />
+    <list default="true" id="d0113c61-f5c6-461b-8c8a-52283790700d" name="Changes" comment="Considere a tabela produto com as colunas identificador, nome, valor, estoque e data de lan ̧camento. Desenvolva a classe DAO correspondente para manipular esta tabela.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Produto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,12 +24,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "thekogami"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;thekogami&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -41,7 +42,9 @@
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="2buwjcYilRBkvN9Ts1EJ2aB1Ft5" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -92,7 +95,14 @@
       <workItem from="1710540608529" duration="2040000" />
       <workItem from="1710797104985" duration="242000" />
       <workItem from="1710797406918" duration="1691000" />
-      <workItem from="1710894738865" duration="1882000" />
+      <workItem from="1710894738865" duration="3337000" />
+      <workItem from="1711145320082" duration="4210000" />
+      <workItem from="1711584529673" duration="1107000" />
+      <workItem from="1712176404657" duration="1202000" />
+      <workItem from="1712281395850" duration="452000" />
+      <workItem from="1712281890795" duration="1394000" />
+      <workItem from="1712357407483" duration="2247000" />
+      <workItem from="1713400139276" duration="4546000" />
     </task>
     <task id="LOCAL-00001" summary="nova estrutura de codigo">
       <option name="closed" value="true" />
@@ -110,7 +120,23 @@
       <option name="project" value="LOCAL" />
       <updated>1710901103941</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Considere a tabela produto com as colunas identificador, nome, valor, estoque e data de lan ̧camento. Desenvolva a classe DAO correspondente para manipular esta tabela.">
+      <option name="closed" value="true" />
+      <created>1710901943019</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1710901943019</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Considere a tabela produto com as colunas identificador, nome, valor, estoque e data de lan ̧camento. Desenvolva a classe DAO correspondente para manipular esta tabela.">
+      <option name="closed" value="true" />
+      <created>1710901953971</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1710901953971</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,6 +155,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="nova estrutura de codigo" />
-    <option name="LAST_COMMIT_MESSAGE" value="nova estrutura de codigo" />
+    <MESSAGE value="Considere a tabela produto com as colunas identificador, nome, valor, estoque e data de lan ̧camento. Desenvolva a classe DAO correspondente para manipular esta tabela." />
+    <option name="LAST_COMMIT_MESSAGE" value="Considere a tabela produto com as colunas identificador, nome, valor, estoque e data de lan ̧camento. Desenvolva a classe DAO correspondente para manipular esta tabela." />
   </component>
 </project>

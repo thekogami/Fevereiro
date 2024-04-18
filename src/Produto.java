@@ -5,14 +5,16 @@ public class Produto {
     private String nome;
     private double valor;
     private int estoque;
-    private LocalDate dataLancamento;
+    private String dataLancamento;
+
+    private boolean ativo = true;
 
     public Produto(int identificador, String nome, double valor, int estoque, LocalDate dataLancamento) {
         this.identificador = identificador;
         this.nome = nome;
         this.valor = valor;
         this.estoque = estoque;
-        this.dataLancamento = dataLancamento;
+        this.dataLancamento = dataLancamento.toString();
     }
 
     public int getIdentificador() {
@@ -31,7 +33,7 @@ public class Produto {
         return estoque;
     }
 
-    public LocalDate getDataLancamento() {
+    public String getDataLancamento() {
         return dataLancamento;
     }
 }

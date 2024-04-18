@@ -2,59 +2,36 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.time.LocalDate;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Olá JDBC");
-        try {
-            // Conexão usando try-with-resources
-            try (Connection con = DriverManager.getConnection("jdbc:sqlite:bancoJava.sql")) {
-                System.out.println("Conectou!");
-                criarTabela(con);
-                // inserirDados(con);
-                // atualizarDados(con);
-                // deletarDados(con);
-            }
-        } catch (SQLException e) {
-            System.out.println("Ocorreu um erro ao conectar ao banco de dados:");
-            e.printStackTrace();
-        }
+
+        ProdutoDAO produtoDAO = new ProdutoDAO();
+
+        Produto produto = new Produto(1, "Produto 1", 10.0, 100, LocalDate.now());
+        produtoDAO.adicionarProduto(produto);
+        produtoDAO.atualizarProduto(produto);
+        List<Produto> produtos = produtoDAO.listarProdutos();
+        produtos.forEach(System.out::println);
+
+        Produto produto2 = new Produto(2, "Produto 2", 20.0, 200, LocalDate.now());
+        produtoDAO.adicionarProduto(produto2);
+        produtoDAO.atualizarProduto(produto2);
+        produtos = produtoDAO.listarProdutos();
+        produtos.forEach(System.out::println);
+
+        Produto produto3 = new Produto(3, "Produto 3", 30.0, 300, LocalDate.now());
+        produtoDAO.adicionarProduto(produto3);
+        produtoDAO.atualizarProduto(produto3);
+        produtos = produtoDAO.listarProdutos();
+        produtos.forEach(System.out::println);
+
+        Produto produto4 = new Produto(4, "Produto 4", 40.0, 400, LocalDate.now());
+        produtoDAO.adicionarProduto(produto4);
+        produtoDAO.atualizarProduto(produto4);
+        produtos = produtoDAO.listarProdutos();
+        produtos.forEach(System.out::println);
     }
-
-    // Método para criar a tabela
-    private static void criarTabela(Connection con) throws SQLException {
-        String criar_tabela = "create table pessoa(" + "id INTEGER PRIMARY KEY," + "nome text);";
-        try (Statement stat = con.createStatement()) {
-            stat.execute(criar_tabela);
-            System.out.println("Tabela criada com sucesso!");
-        }
-    }
-
-    // Exemplo de método para inserir dados (com PreparedStatement)
-    // private static void inserirDados(Connection con) throws SQLException {
-    //     String inserir = "insert into pessoa (nome) values (?)";
-    //     try (PreparedStatement ps = con.prepareStatement(inserir)) {
-    //         ps.setString(1, "Beltrano");
-    //         ps.execute();
-    //         System.out.println("Dados inseridos com sucesso!");
-    //     }
-    // }
-
-    // Exemplo de método para atualizar dados
-    // private static void atualizarDados(Connection con) throws SQLException {
-    //     String atualizar = "update pessoa set nome = 'Ciclano' where id = 1";
-    //     try (Statement stat = con.createStatement()) {
-    //         stat.execute(atualizar);
-    //         System.out.println("Dados atualizados com sucesso!");
-    //     }
-    // }
-
-    // Exemplo de método para deletar dados
-    // private static void deletarDados(Connection con) throws SQLException {
-    //     String deletar = "delete from pessoa where id = 1";
-    //     try (Statement stat = con.createStatement()) {
-    //         stat.execute(deletar);
-    //         System.out.println("Dados deletados com sucesso!");
-    //     }
-    // }
 }
